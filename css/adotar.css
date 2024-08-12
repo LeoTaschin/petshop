@@ -1,0 +1,128 @@
+#adotar {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 5rem;
+}
+
+.adotar-fundo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.adotar-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adotar-titulo h2{
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.adotar-titulo p {
+  width: 40%;
+}
+
+.container-adotar, .container-produtos {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.adotar-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: #fff;
+  justify-content: center;
+  width: 206px;
+  height: 250px;
+  padding: 1rem;
+  gap: 1rem;
+
+  transform: translateZ(0);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.info-pets {
+  text-align: center;
+}
+
+.adotar-card img {
+  width: auto;
+}
+
+.adotar-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.container-adotar-mobile{
+  display: none;
+}
+
+.adotar-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.adotar-img img{
+  width: 100%;
+}
+
+.adotar-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.adotar-img img{
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-adotar{
+    display: none;
+  }
+
+  .adotar-titulo p{
+    width: 100%;
+  }
+
+  .container-adotar-mobile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .container-adotar-mobile img{
+    width: 200px;
+  }
+
+  .container-adotar-mobile .swiper-horizontal{
+    width: 270px;
+  }
+
+  .container-adotar-mobile #swiper-wrapper-425003841310ecc94{
+    width: 100px;
+  }
+
+
+}

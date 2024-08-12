@@ -1,0 +1,186 @@
+#sobre {
+    display: flex;
+    padding: 4rem 5rem;
+    gap: 1.5rem;
+}
+
+.divisao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    border-bottom: 2px solid;
+    border-color: rgba(0, 0, 0, 0.50);
+    width: 60%;
+}
+
+.container-sobre {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    gap: 2rem   ;
+}
+
+.novo-pet {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-local {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.novo-pet h2,
+.container-local h2,
+.contato h2 {
+    color: #000;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.novo-pet p{
+    padding: 2rem;
+}
+
+
+.container-local{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.mapa{
+    display: flex;
+    gap: 1rem;
+}
+
+.container-info-local{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.endereco, .horario{
+    display: flex;
+    gap: 1rem;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.contato-avaliacao{
+    gap: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.contato-lista li{
+    display: flex;
+    gap: 0.2em;
+    text-transform: uppercase;
+}
+
+.avaliacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.avaliacao h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.avaliacao-lista{
+    list-style: none;
+    gap: 1rem;
+}
+
+.avaliacao-lista li{
+    display: flex;
+    margin-top: 2em;
+    gap: 0.7em;
+}
+
+.nome-comentario{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    #sobre{
+        flex-wrap: wrap;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .avaliacao{
+        padding: 1.5rem 3rem;
+    }
+    .container-cachorro{
+        min-width: 500px;
+        text-align: center;
+    }
+    .mapa iframe{
+        width: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #sobre{
+        flex-wrap: wrap;
+    }
+    .mapa{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner{
+        display: grid;
+    }
+
+    .avaliacao{
+        padding: 1rem 3rem;
+    }
+
+    .container-cachorro{
+        min-width: 0;
+    }
+
+    .novo-pet p{
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,120 @@
+#produtos{
+    margin-bottom: 3em;
+}
+
+.filtros-cards{
+    display: flex;
+}
+
+.produtos-titulo{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    
+}
+
+.produtos-titulo h2{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    
+}
+.produtos-titulo p{
+    display: flex;
+    flex-direction: column;
+    width: 605px;
+    
+}
+
+.filtros ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5px;
+}
+
+.filtros h4 {
+    margin-bottom: 1em;  
+}
+
+
+
+.caixa-filtros{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5em;
+    gap: 1em;
+}
+
+
+
+.produtos-card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #fff;
+    justify-content: center;
+    width: 206px;
+    height: 350px;
+    padding: 1rem;
+    gap: 1rem;
+    position: relative;
+    transform: translateZ(0);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.cor-preco{
+    color: green;
+}
+/* Rating dos cards que nao funfou */
+.rating{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 0;
+}
+
+.off {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    width: fit-content;
+    padding-inline: 10px;
+    background: var(--primary-color);
+}
+
+.off span {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .container-produtos{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .filtros-cards{
+        flex-wrap:  wrap;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .produtos-card {
+        width: 106px;
+        height: 250px;
+    }
+
+    .produtos-titulo p{
+        width: 80%;
+    }
+
+}

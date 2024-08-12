@@ -1,0 +1,151 @@
+#inicio {
+  padding: 4rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  width: 70%;
+  position: relative;
+}
+
+.banner-informacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  /* justify-content: space-between; */
+}
+
+.banner-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-informacoes a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  border-radius: 7px;
+  background: var(--secundary-color);
+  width: 233px;
+  height: 51px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.banner-informacoes p {
+  color: #000;
+  font-size: 18px;
+  padding: 1rem;
+  font-weight: 400;
+}
+
+.banner-informacoes h2 {
+  color: #000;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+}
+
+.banner-informacoes a:hover {
+  background-color: #2f70ad;
+}
+
+.swiper1 {
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.item-swiper {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 13vw;
+  margin: 2rem auto;
+  display: grid;
+  place-items: center;
+}
+
+.item-swiper img {
+  width: 8vw;
+  height: auto;
+}
+
+.item-swiper div {
+  display: grid;
+  place-items: start !important;
+}
+
+.banner-slides {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #inicio {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-informacoes {
+    width: 100vw;
+    align-items: center;
+    margin-top: 6rem;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-swiper {
+    width: 20vw;
+  }
+  .banner-slides {
+    display: block;
+    margin-block: 2rem;
+  }
+
+  .banner-img {
+    display: block !important;
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+  }
+
+  #gatoweb {
+    display: none;
+  }
+
+  .banner-div {
+    display: grid !important;
+    place-items: center !important;
+    height: fit-content !important;
+  }
+
+  .banner-div img {
+    width: 60vw;
+    height: auto;
+    margin: auto;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+  .banner {
+    width: 100%;
+    flex-direction: column;
+  }
+}
